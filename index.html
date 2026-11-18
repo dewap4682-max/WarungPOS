@@ -24,6 +24,8 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 
 @media (orientation:portrait) and (min-width:801px){:root{--pay:372px}.workspace{padding:26px 24px}.product-grid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:16px}.product-card{min-height:248px;padding:22px 10px 15px}.product-disc{width:136px;height:136px;margin-bottom:14px}.product-card .p-name{font-size:13px}.product-card .p-price{font-size:16px}.cart-thumb{width:52px;height:52px}.summary-total strong{font-size:27px}.pay-button{height:50px}}
+/* Tombol aksi judul tetap tampil di layar ponsel/tablet sempit. */
+@media(max-width:800px){.page-title{align-items:flex-start;flex-direction:column;gap:10px}.page-title .title-actions{display:flex;flex-wrap:wrap;width:100%;gap:6px}.page-title .title-actions>.btn{font-size:11px;padding:8px 10px;min-height:34px}}
 @media print{body>*{display:none!important}body{background:white}.print-only{display:block!important}}
 
 /* ===== TEMA HIJAU + TULISAN HITAM (permintaan pengguna) ===== */
@@ -182,6 +184,33 @@ tbody tr:hover{background:#f2fbf5}
 body.teks-tebal{font-weight:600}
 body.teks-tebal p,body.teks-tebal span,body.teks-tebal td,body.teks-tebal li,body.teks-tebal label,body.teks-tebal .btn,body.teks-tebal .nav-btn,body.teks-tebal .category,body.teks-tebal input,body.teks-tebal select,body.teks-tebal textarea,body.teks-tebal .p-name,body.teks-tebal .cart-title strong{font-weight:700}
 body.teks-tebal small,body.teks-tebal .sub,body.teks-tebal .p-unit,body.teks-tebal .cart-unit{font-weight:600}
+
+/* Layout khusus ponsel: tanpa lebar desktop minimum dan kontrol tetap bisa dijangkau. */
+@media(max-width:800px){
+  :root{--sidebar:54px;--pay:100%}
+  .shell{min-width:0;grid-template-columns:54px minmax(0,1fr);overflow:hidden}
+  .main{min-width:0;overflow:hidden}
+  .topbar{padding:0 10px;gap:6px}
+  .workspace{padding:12px 10px;overflow:auto}
+  .workspace.pos-space{min-height:0;overflow:auto}
+  .pos-layout{height:auto;display:flex;flex-direction:column;gap:12px}
+  .catalog{min-height:520px}
+  .payment{min-height:560px;overflow:visible}
+  .page-title{align-items:flex-start;flex-direction:column;gap:10px}
+  .page-title .title-actions{display:flex;flex-wrap:wrap;width:100%;gap:6px}
+  .page-title .title-actions>.btn{white-space:normal;font-size:11px;padding:8px 9px;min-height:34px}
+  .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .stat-card{min-width:0;padding:12px}
+  .stat-card strong{font-size:20px}
+  .filters{display:flex;flex-wrap:wrap;gap:7px}
+  .filters>.searchbar{flex:1 1 100%;min-width:0}
+  .filters>.btn,.filters>label.btn{min-height:34px;padding:7px 9px;font-size:10px}
+  .table-wrap{max-width:100%;overflow:auto}
+  .modal-overlay{padding:7px}
+  .modal{max-height:calc(100dvh - 14px)}
+  .modal-body{padding:12px}
+  .modal-footer{padding:10px 12px;flex-wrap:wrap}
+}
 </style>
 </head>
 <body>
