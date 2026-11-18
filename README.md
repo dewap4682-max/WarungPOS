@@ -14,9 +14,11 @@ Workflow `.github/workflows/pages.yml` akan menerbitkan ulang PWA setiap ada per
 
 ## Pasang di perangkat
 
+- **Windows 10/11:** buka URL HTTPS di Chrome atau Edge → ikon instalasi di bilah alamat/menu → **Instal Warung POS**. Setelah terpasang, PWA bisa dibuka dari Start Menu dan dijalankan offline setelah pemuatan pertama.
 - **Android:** buka URL HTTPS di Chrome → menu ⋮ → **Instal aplikasi** / **Tambahkan ke layar utama**.
 - **iPhone/iPad:** buka URL HTTPS di Safari → tombol **Bagikan** → **Tambahkan ke Layar Utama**. iOS tidak selalu menampilkan banner instalasi otomatis.
-- Saat pertama membuka, muat halaman dalam keadaan online sekali agar berkas PWA dan pemindai barcode tersimpan untuk pemakaian offline. Kamera memerlukan HTTPS, izin kamera, dan koneksi awal; pemindaian berjalan di perangkat.
+- Saat pertama membuka, muat halaman dalam keadaan online sekali agar aplikasi dan pemindai barcode tersimpan untuk pemakaian offline. Kamera memerlukan HTTPS, izin kamera, dan akses pertama; pemindaian berjalan di perangkat.
+- Untuk memperbarui instalasi lama: sambungkan internet, buka PWA, tunggu service worker baru terpasang, lalu muat ulang. Jika masih menampilkan layar “Menyiapkan ruang kasir Anda…”, tutup PWA dan buka kembali; bila tetap tersangkut, hapus PWA lama dari layar utama lalu instal ulang dari URL terbaru.
 
 ## Stock opname
 

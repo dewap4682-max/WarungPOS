@@ -1,4 +1,4 @@
-const CACHE_NAME = 'warungpos-pwa-1.0.3-opname-1';
+const CACHE_NAME = 'warungpos-pwa-1.0.3-opname-4';
 const BASE = new URL('./', self.registration.scope);
 const SHELL = [
   new URL('./', BASE).href,
