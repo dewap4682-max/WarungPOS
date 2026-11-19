@@ -40,3 +40,7 @@ CSV yang diterima menggunakan kolom seperti `nama,barcode,sku,kategori,satuan,mo
 - `sw.js` — cache shell/offline dan pembaruan versi cache.
 - `icons/` — ikon Android dan Apple.
 - `.github/workflows/pages.yml` — deploy otomatis ke GitHub Pages.
+
+## Lisensi Stock Opname
+
+Stock Opname dikunci sampai key yang valid diaktifkan pada perangkat/browser tersebut. Paket mendukung key permanen seharga Rp1.000.000 atau key bulanan Rp100.000 untuk 30 hari. Pembayaran dan penerbitan key dilakukan manual oleh pemilik aplikasi. Pelanggan menyalin ID perangkat yang ditampilkan di jendela aktivasi; Admin membuat key dengan tool privat `WarungPOS-Keygen.cjs`, lalu pelanggan menempel key. Jangan pernah mengunggah private key ke repository atau membagikannya ke pelanggan. Key bulanan terkunci tepat saat kedaluwarsa. Lisensi tersimpan lokal pada browser dan bekerja offline; lisensi browser tidak otomatis berpindah perangkat.
